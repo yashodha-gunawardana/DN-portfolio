@@ -1,19 +1,22 @@
 :root {
-    --bg-deep: #080b10;
+    --bg-black: #01010a;
             
-    --card-glass: rgba(15, 23, 42, 0.65); 
-    --header-bg: rgba(13, 18, 28, 0.85);
-    --border-glass: rgba(6, 182, 212, 0.2);
+    --card-glass: rgba(22, 22, 26, 0.75);
+    --header-bg: rgba(15, 15, 18, 0.85);
+    --border-glass: rgba(255, 255, 255, 0.12);
+    --border-red: rgba(255, 42, 75, 0.35);
+            
+    --red-primary: #C81B1E;
+    --red-dark: #b91c1c;
+    --red-subtle: rgba(255, 42, 75, 0.15);
 
-    --cyan-primary: #06b6d4;
-    --cyan-bright: #00f0ff;
-    --teal-accent: #14b8a6;
-    --blue-subtle: #3b82f6;
-
-    --subtle-glow: rgba(6, 182, 212, 0.15);
-
-    --text-main: #f8fafc;
-    --text-sub: #94a3b8;
+    --white: #ffffff;
+    --grey-light: #e4e4e7;
+    --grey-mid: #a1a1aa;
+    --grey-dark: #920e0e;
+            
+    --text-main: #ffffff;
+    --text-sub: #a1a1aa;
 
     --font-family: 'Poppins', sans-serif;
 }
@@ -26,7 +29,7 @@
 }
 
 body {
-    background-color: var(--bg-deep);
+    background-color: var(--bg-black);
     color: var(--text-main);
     min-height: 100vh;
     display: flex;
@@ -62,20 +65,20 @@ body {
 }
 
 .wave-line-1 {
-    stroke: url(#cyan-grad-1);
+    stroke: url(#red-grad-1);
     animation-duration: 14s, 7s;
     opacity: 0.7;
 }
 
 .wave-line-2 {
-    stroke: url(#cyan-grad-2);
+    stroke: url(#grey-grad-2);
     animation-duration: 18s, 10s;
     animation-delay: -3s;
     opacity: 0.5;
 }
 
 .wave-line-3 {
-    stroke: url(#teal-grad-1);
+    stroke: url(#red-grad-1);
     animation-duration: 22s, 12s;
     animation-delay: -6s;
     opacity: 0.4;
@@ -109,4 +112,28 @@ body {
     align-items: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(14px);
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    background: var(--red-primary);
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.3px;
 }
