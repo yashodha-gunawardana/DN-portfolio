@@ -9,8 +9,24 @@
             
     --text-main: #f8fafc;
     --text-sub: #94a3b8;
-    
+
     --font-family: 'Poppins', sans-serif;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
 
+body {
+    background-color: var(--bg-obsidian);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    position: relative;
 }
