@@ -1,0 +1,16 @@
+:root {
+    --bg-obsidian: #0b0d11;
+
+    --violet-primary: #a855f7;
+    --violet-dark: #7c3aed;
+    --violet-light: #c084fc;
+    --violet-glow: rgba(168, 85, 247, 0.45);
+    --violet-surface: rgba(168, 85, 247, 0.1);
+            
+    --text-main: #f8fafc;
+    --text-sub: #94a3b8;
+    
+    --font-family: 'Poppins', sans-serif;
+
+
+}
