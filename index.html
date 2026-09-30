@@ -15,16 +15,46 @@
 </head>
 <body>
 
-<div class="ambient-glow glow-dot-1"></div>
-<div class="ambient-glow glow-dot-2"></div>
-<div class="ambient-glow glow-dot-3"></div>
+<!-- Animated Curves Background Layer -->
+<div class="animated-curves-container">
+    <svg class="curve-svg" viewBox="0 0 1440 900" preserveAspectRatio="none">
+        <defs>
+            <!-- Cyan Gradient 1 -->
+            <linearGradient id="cyan-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8" />
+                <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.5" />
+                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+            </linearGradient>
+
+            <!-- Cyan Gradient 2 -->
+            <linearGradient id="cyan-grad-2" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.7" />
+                <stop offset="60%" stop-color="#06b6d4" stop-opacity="0.4" />
+                <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+            </linearGradient>
+
+            <!-- Teal Gradient -->
+            <linearGradient id="teal-grad-1" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6" />
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.1" />
+            </linearGradient>
+
+            <!-- Filled Ambient Curve Gradient -->
+            <linearGradient id="filled-curve-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.4" />
+                <stop offset="70%" stop-color="#2563eb" stop-opacity="0.1" />
+                <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+            </linearGradient>
+        </defs>
+    </svg>
+</div>
 
 
 <!--Header Section-->
 <div class="header-container">
     <section>
         <header class="header">
-            <a href="#" class="logo">DN</a><span class="logo-name">Dinithi.</span>
+            <a href="#" class="logo">D</a><span class="logo-name">Dinithi.</span>
             <nav class="navbar">
                 <a href="#" class="active" >Home</a>
                 <a href="#about">About</a>
