@@ -80,3 +80,12 @@ body {
     animation-delay: -6s;
     opacity: 0.4;
 }
+
+@keyframes dashFlow {
+    0% {
+        stroke-dashoffset: 2400;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
