@@ -1,22 +1,24 @@
 :root {
-    --bg-black: #01010a;
+    --bg-black: #000000;
             
-    --card-glass: rgba(22, 22, 26, 0.75);
-    --header-bg: rgba(15, 15, 18, 0.85);
+    --bg-dark: #080808;
+    --card-glass: rgba(18, 18, 20, 0.85);
+    --header-bg: rgba(12, 12, 14, 0.9);
     --border-glass: rgba(255, 255, 255, 0.12);
-    --border-red: rgba(255, 42, 75, 0.35);
+    --border-red: rgba(255, 0, 0, 0.4);
             
-    --red-primary: #C81B1E;
-    --red-dark: #b91c1c;
-    --red-subtle: rgba(255, 42, 75, 0.15);
+    --red-clear: #ff0000;
+    --red-bright: #ff3333;
+    --red-dark: #cc0000;
+    --red-subtle: rgba(255, 0, 0, 0.12);
 
     --white: #ffffff;
-    --grey-light: #e4e4e7;
-    --grey-mid: #a1a1aa;
-    --grey-dark: #920e0e;
+    --grey-light: #e0e0e0;
+    --grey-mid: #9e9e9e;
+    --grey-dark: #222222;
             
     --text-main: #ffffff;
-    --text-sub: #a1a1aa;
+    --text-sub: #9e9e9e;
 
     --font-family: 'Poppins', sans-serif;
 }
@@ -39,58 +41,17 @@ body {
     position: relative;
 }
 
-.animated-curves-container {
+.tech-grid-bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 85%);
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 85%);
     pointer-events: none;
     z-index: 1;
-}
-
-.curve-svg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.animated-wave-line {
-    fill: none;
-    stroke-width: 2.5;
-    stroke-dasharray: 1200;
-    stroke-dashoffset: 1200;
-    animation: dashFlow 12s linear infinite, floatCurve 8s ease-in-out infinite alternate;
-}
-
-.wave-line-1 {
-    stroke: url(#red-grad-1);
-    animation-duration: 14s, 7s;
-    opacity: 0.7;
-}
-
-.wave-line-2 {
-    stroke: url(#grey-grad-2);
-    animation-duration: 18s, 10s;
-    animation-delay: -3s;
-    opacity: 0.5;
-}
-
-.wave-line-3 {
-    stroke: url(#red-grad-1);
-    animation-duration: 22s, 12s;
-    animation-delay: -6s;
-    opacity: 0.4;
-}
-
-@keyframes dashFlow {
-    0% {
-        stroke-dashoffset: 2400;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
 }
 
 .header-container {
