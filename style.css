@@ -30,3 +30,50 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+
+.ambient-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 0;
+    animation: floatGlow 10s ease-in-out infinite alternate;
+}
+
+.glow-dot-1 {
+    width: 420px;
+    height: 420px;
+    background-color: var(--violet-primary);
+    top: 2%;
+    left: -100px;
+}
+
+.glow-dot-2 {
+    width: 480px;
+    height: 480px;
+    background: var(--violet-dark);
+    top: 30%;
+    right: -120px;
+    animation-delay: 3s;
+}
+
+.glow-dot-3 {
+    width: 300px;
+    height: 300px;
+    background: var(--violet-light);
+    bottom: 10%;
+    left: 20%;
+    animation-delay: 5s;
+}
+
+@keyframes flotGlow {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-30px) scale(1.1);
+        opacity: 0.5;
+    }
+}
