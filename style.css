@@ -248,3 +248,21 @@ body {
     border-radius: 2px;
     box-shadow: 0 0 8px var(--red-clear);
 }
+
+.home {
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 5px 60px 5px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 10;
+    flex-grow: 1;
+}
+
+.home-content {
+    z-index: 2;
+}
