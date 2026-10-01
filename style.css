@@ -352,3 +352,59 @@ body {
     justify-content: center;
     gap: 10px;
 }
+
+.btn-box a:first-child {
+    background: var(--red-clear);
+    color: var(--white);
+    padding: 13px 32px;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-circle {
+    width: 34px;
+    height: 34px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0,25);
+    transition: transform 0.3s ease;
+}
+
+.btn-box a:first-child:hover .btn-circle {
+    transform: scale(1.05);
+}
+
+.btn-arrow {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+    stroke: var(--red-clear);
+}
+
+.btn-box a:first-child:hover .btn-arrow {
+    transform: translateX(5px);
+}
+
+.btn-box a:first-child:hover {
+    transform: translateY(-2px);
+    background: var(--red-bright);
+    box-shadow: 0 6px 25px rgba(255, 0, 0, 0.6);
+}
+
+.btn-box a:last-child {
+    background: var(--card-glass);
+    color: var(--white);
+    border: 1px solid var(--border-glass);
+    padding: 13px 32px;
+    backdrop-filter: blur(10px);
+}
+
+.btn-box a:last-child:hover {
+    border-color: var(--grey-light);
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
