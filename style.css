@@ -89,8 +89,8 @@ body {
 }
 
 .dot-1 {
-    width: 2px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     background: var(--red-clear);
     box-shadow: 0 0 6px var(--red-clear);
     top: 22%;
@@ -173,6 +173,46 @@ body {
     left: 55%;
     animation-duration: 7.5s;
     animation-delay: -3s;
+}
+
+.dot-9 {
+    width: 4px;
+    height: 4px;
+    background: var(--red-clear);
+    box-shadow: 0 0 6px var(--red-clear);
+    top: 22%;
+    right: 8%;
+    animation-duration: 5s;
+}
+
+.dot-10 {
+    width: 4px;
+    height: 4px;
+    background: var(--white);
+    box-shadow: 0 0 6px var(--white);
+    bottom: 28%;
+    left: 8%;
+    animation-duration: 5s;
+}
+
+.dot-11 {
+    width: 4px;
+    height: 4px;
+    background: var(--red-clear);
+    box-shadow: 0 0 6px var(--red-clear);
+    bottom: 10%;
+    left: 40%;
+    animation-duration: 5s;
+}
+
+.dot-12 {
+    width: 4px;
+    height: 4px;
+    background: var(--white);
+    box-shadow: 0 0 6px var(--white);
+    bottom: 15%;
+    right: 15%;
+    animation-duration: 5s;
 }
 
 @keyframes floatDot {
@@ -279,7 +319,7 @@ body {
     max-width: 1350px;
     margin: 0 auto;
     width: 100%;
-    padding: 100px 5% 60px 5%;
+    padding: 50px 5% 60px 5%;
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
