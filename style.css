@@ -325,3 +325,30 @@ body {
         transform: translateY(0) scale(1);
     }
 }
+
+.home-content p {
+    color: var(--grey-mid);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.btn-box a {
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
