@@ -480,6 +480,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1.1;
 }
 
 .home-img-wrapper img {
@@ -489,5 +493,5 @@ body {
     max-width: 400px;
     height: auto;
     object-fit: cover;
-    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.95));
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.95)); 
 }
