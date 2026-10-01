@@ -54,6 +54,32 @@ body {
     z-index: 1;
 }
 
+.ambient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(140px);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.25;
+}
+
+.orb-red {
+    width: 450px;
+    height: 450px;
+    background: var(--red-clear);
+    top: -80px;
+    right: 10%;
+}
+
+.orb-grey {
+    width: 380px;
+    height: 380px;
+    background: var(--grey-mid);
+    bottom: 8%;
+    left: -50px;
+    opacity: 0.08;
+}
+
 .floating-dot {
     position: absolute;
     border-radius: 50%;
