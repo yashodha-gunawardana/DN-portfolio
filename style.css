@@ -861,15 +861,15 @@ body {
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 4px 10px;
+    padding: 6px 14px;
     border-radius: 8px;
 
 }
 
 .project-grid .btn-github-repo:hover {
-    color: var(--grey-dark);
+    color: var(--bg-black);
     background: var(--white);
-    border-color: var(--grey-dark);
+    border-color: var(--bg-black);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
 }
@@ -928,8 +928,7 @@ body {
 }
 
 .module-type-badge {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     gap: 8px;
     font-size: 0.75rem;
     font-weight: 500;
@@ -939,16 +938,25 @@ body {
 }
 
 .assignments-meta-side h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--white);
     line-height: 1.25;
+    text-align: left;
 }
 
 .assignments-meta-side p {
     color: var(--grey-mid);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.6;
+    text-align: left;
+}
+
+.assignment-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
 }
 
 .assignment-tasks-grid {
@@ -981,24 +989,26 @@ body {
     justify-content: space-between;
 }
 
-.assignment-item-title {
-    font-size: 1.1rem;
-    font-weight: 800;
+.assignment-item-box h4 {
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--white);
 }
 
 .status-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--red-pure);
+    width: 6px;
+    height: 6px;
+    background: var(--red-bright);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--red-pure);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.55);
 }
 
-.assignment-item-details {
+.assignment-item-box p {
     font-size: 0.82rem;
     color: var(--grey-mid);
     line-height: 1.5;
+    margin-top: 10px;
+    text-align: left;
 }
 
 .assignment-action-row {
@@ -1006,4 +1016,27 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 8px;
+}
+
+.btn-github-repo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--white);
+    font-size: 0.80rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.btn-github-repo:hover {
+    color: var(--bg-black);
+    background: var(--white);
+    border-color: var(--bg-black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
 }
