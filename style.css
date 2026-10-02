@@ -974,3 +974,15 @@ body {
     border-color: rgba(255, 0, 0, 0.35);
     transform: translateY(-3px);
 }
+
+.assignment-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.assignment-item-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--white);
+}
