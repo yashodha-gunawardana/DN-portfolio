@@ -986,3 +986,24 @@ body {
     font-weight: 800;
     color: var(--white);
 }
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--red-pure);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--red-pure);
+}
+
+.assignment-item-details {
+    font-size: 0.82rem;
+    color: var(--grey-mid);
+    line-height: 1.5;
+}
+
+.assignment-action-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+}
