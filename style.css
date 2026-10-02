@@ -5,6 +5,7 @@
     --card-glass: rgba(18, 18, 20, 0.85);
     --header-bg: rgba(12, 12, 14, 0.9);
     --border-glass: rgba(255, 255, 255, 0.12);
+    --border-subtle: rgba(255, 255, 255, 0.08);
     --border-red: rgba(255, 0, 0, 0.4);
             
     --red-clear: #ff0000;
@@ -602,5 +603,32 @@ body {
     position: relative;
     transition: transform 0.4s ease, filter 0.4s ease;
     cursor: pointer;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+}
+
+.skill-card {
+    background: rgba(18, 18, 26, 0.75);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 14px 14px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 0, 0, 0.55);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.22), 0 0 20px rgba(0, 0, 0, 0.9);
+    background: rgba(26, 16, 24, 0.92);
 }
 
