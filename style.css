@@ -711,7 +711,7 @@ body {
 
 /* project section */
 .project-section {
-    padding: 80px 5% 100px 5%;
+    padding: 40px 5% 100px 5%;
     max-width: 1350px;
     margin: 0 auto;
     width: 100%;
@@ -819,4 +819,29 @@ body {
     line-height: 1.65;
     margin-bottom: 24px;
     flex-grow: 1;
+}
+
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.tech-pill {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--grey-light);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.project-footer-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
