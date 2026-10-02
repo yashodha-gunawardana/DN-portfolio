@@ -845,3 +845,27 @@ body {
     padding-top: 16px;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
+
+.project-grid .btn-github-repo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--white);
+    font-size: 0.80rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 4px 10px;
+    border-radius: 8px;
+
+}
+
+.project-grid .btn-github-repo:hover {
+    color: var(--grey-dark);
+    background: var(--white);
+    border-color: var(--grey-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
+}
