@@ -500,7 +500,7 @@
 </section>
 
 <!--  Gallery Section-->
-<!-- <section>
+<section>
     <div>
         <h1>GALLERY</h1>
     </div>
@@ -531,21 +531,110 @@
     <div>
         <img src="asserts/image09.jpg" width="35" alt="no icon">
     </div>
-</section> -->
+</section>
 
 <!--Contact Me Section-->
-<!-- <section>
-    <div>
-        <h1>CONTACT ME</h1>
-        <input type="text"  placeholder="First name"> <br><br>
-        <input type="text"  placeholder="Last name">  <br><br>
-        <input type="text"  placeholder="Mobile NO">  <br><br>
-        <input type="text"  placeholder="Email">  <br><br>
-        <input type="text"  placeholder="Your message"> <br><br>
+<section id="contact" class="contact-section">
+    <div contact-content>
 
-        <button type="button"> Send </button>
+        <div class="contact-header">
+            <h1> Get In Touch 📚</h1>
+            <h3>Contact<span class="liquid-shimmer">Me</span></h3>
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- Direct Contact Details -->
+            <div class="contact-info-col">
+                <div class="contact-info-card">
+
+                    <div class="contact-icon-box">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                        
+                    <div>
+                        <div class="contact-card-label">Email Address</div>
+                        <a href="mailto:dinithinimasha@gmail.com" class="contact-card-value">dinithinimasha@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon-box">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <div class="contact-card-label">Mobile Number</div>
+                        <a href="tel:+94700000000" class="contact-card-value">+94 70 000 0000</a>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <div class="contact-card-label">Location</div>
+                        <div class="contact-card-value">Colombo, Sri Lanka</div>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon-box">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <div class="contact-card-label">Availability</div>
+                        <div class="contact-card-value">Open for Freelance & Opportunities</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form">
+
+                <div class="form-row-2col">
+                    <div class="form-group">
+                        <label class="form-label" for="firstName">First Name</label>
+                        <input type="text" id="firstName" class="form-input" placeholder="First name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="lastName">Last Name</label>
+                        <input type="text" id="lastName" class="form-input" placeholder="Last name" required>
+                    </div>
+                </div>
+
+                <div class="form-row-2col">
+                    <div class="form-group">
+                        <label class="form-label" for="mobileNo">Mobile NO</label>
+                        <input type="tel" id="mobileNo" class="form-input" placeholder="Mobile NO" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="message">Your Message</label>
+                    <textarea id="message" class="form-textarea" placeholder="Your message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-send-msg">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+
+                <div id="formSuccessMsg" style="display: none; color: #339933; font-family: var(--font-code); font-size: 0.85rem; text-align: center; margin-top: 10px;">
+                    <i class="fa-solid fa-circle-check"></i> Message sent successfully! I will get back to you soon.
+                </div>
+            </form>
+        </div>
     </div>
-</section> -->
+</section>
 
 </body>
 </html>
